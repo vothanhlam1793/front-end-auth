@@ -1,6 +1,6 @@
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
-
+import { forceLocaleVi } from './utils/forceLocale'
 import React, { StrictMode } from 'react'
 
 import {
@@ -36,13 +36,14 @@ subscribe(APP_INIT_ERROR, error => {
     </StrictMode>
   )
 })
-
 initialize({
   handlers: {
     config: () => {
-      mergeConfig(configuration)
-      // mergeConfig({ LANGUAGE_CODE: 'vi' })
+      mergeConfig({
+        ...configuration
+      })
     }
   },
   messages
 })
+forceLocaleVi()

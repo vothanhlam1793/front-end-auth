@@ -75,8 +75,8 @@ const messages = defineMessages({
     defaultMessage: 'Enter your username or email',
     description: 'Validation message that appears when email is empty'
   },
-  'password.validation.message': {
-    id: 'password.validation.message',
+  'password.validation1.message': {
+    id: 'password.validation1.message',
     defaultMessage: 'Enter your password',
     description: 'Validation message that appears when password is empty'
   },

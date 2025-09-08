@@ -139,7 +139,7 @@ const LoginPage = props => {
     }
     if (password === '') {
       fieldErrors.password = formatMessage(
-        messages['password.validation.message']
+        messages['password.validation1.message']
       )
     }
 
